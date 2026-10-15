@@ -9,6 +9,7 @@ import { ContactModule } from './contact/contact.module';
 import { SubscribersModule } from './subscribers/subscribers.module';
 import { UploadModule } from './upload/upload.module';
 import { MailModule } from './mail/mail.module';
+import { HealthController } from './health.controller';
 
 @Module({
   imports: [
@@ -23,5 +24,6 @@ import { MailModule } from './mail/mail.module';
     SubscribersModule,
     UploadModule,
   ],
+  controllers: [HealthController],
 })
 export class AppModule {}
